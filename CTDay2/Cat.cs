@@ -2,6 +2,7 @@
 {
     internal class Cat
     {
+        public static string BinomialName { get; } = "Felis Catus";
         public string Name { get; set; }
        
         private char _gender;
@@ -49,15 +50,23 @@
             Name = name;
             Gender = gender;
             Breed = breed;
+
         }
 
         public Cat(string name)
         {
             Name = name;
+            PetShop.AddCat(this);
         }
 
         public Cat()
         {
+            PetShop.AddCat(this);
+        }
+
+        public static void PrintBinomialName()
+        {
+            Console.WriteLine(BinomialName);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace PetShop
 
         public Cat()
         {
-            insertionDate = DateTime.Now;  
+            insertionDate = DateTime.Now;  s
         }
 
         public void Mew()
